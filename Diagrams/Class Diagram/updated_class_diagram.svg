@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="5400" height="3800" viewBox="0 0 5400 3800" role="img" aria-labelledby="title desc">
+<title id="title">UML Class Diagram of the AI-Powered Enterprise RAG System</title>
+<desc id="desc">Corrected UML 2.5 class diagram with conventional compartments, typed operations, endpoint multiplicities, associations, and service dependencies.</desc>
+<defs><marker id="dependencyArrow" markerWidth="15" markerHeight="15" refX="13" refY="6" orient="auto" markerUnits="strokeWidth"><path d="M1,1 L13,6 L1,11" fill="white" stroke="#52697A" stroke-width="1.7"/></marker></defs>
+<rect width="5400" height="3800" fill="#FFFFFF"/>
+<rect x="90" y="90" width="5220" height="2660" rx="10" fill="none" stroke="#8393A1" stroke-width="4"/>
+<rect x="90" y="2790" width="5220" height="850" rx="10" fill="none" stroke="#8393A1" stroke-width="4"/>
+<rect x="125" y="72" width="575" height="42" fill="white"/>
+<text x="145" y="105" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="36" fill="#263746">Domain and persistent classes</text>
+<rect x="125" y="2772" width="315" height="42" fill="white"/>
+<text x="145" y="2805" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="36" fill="#263746">Service classes</text>
+<polyline points="1190,610 1370,610" fill="none" stroke="#263746" stroke-width="5" stroke-linejoin="round"/>
+<polyline points="2520,620 2710,620" fill="none" stroke="#263746" stroke-width="5" stroke-linejoin="round"/>
+<polyline points="3930,650 4120,650" fill="none" stroke="#263746" stroke-width="5" stroke-linejoin="round"/>
+<polyline points="685,300 685,190 4670,190 4670,300" fill="none" stroke="#263746" stroke-width="5" stroke-linejoin="round"/>
+<polyline points="1945,824 1945,1430" fill="none" stroke="#263746" stroke-width="5" stroke-linejoin="round"/>
+<polyline points="4670,924 4670,1430" fill="none" stroke="#263746" stroke-width="5" stroke-linejoin="round"/>
+<polyline points="4280,924 4280,1250 3235,1250 3235,1430" fill="none" stroke="#263746" stroke-width="5" stroke-linejoin="round"/>
+<polyline points="1690,3180 1880,3180" fill="none" stroke="#52697A" stroke-width="5" stroke-linejoin="round" stroke-dasharray="18 14" marker-end="url(#dependencyArrow)"/>
+<polyline points="1230,2950 1230,2490 1530,2490 1530,1904" fill="none" stroke="#52697A" stroke-width="5" stroke-linejoin="round" stroke-dasharray="18 14" marker-end="url(#dependencyArrow)"/>
+<polyline points="3235,1904 3235,2660 3850,2660 3850,2950" fill="none" stroke="#52697A" stroke-width="5" stroke-linejoin="round" stroke-dasharray="18 14" marker-end="url(#dependencyArrow)"/>
+<polyline points="3000,2950 3000,2590 4050,2590 4050,2004" fill="none" stroke="#52697A" stroke-width="5" stroke-linejoin="round" stroke-dasharray="18 14" marker-end="url(#dependencyArrow)"/>
+<polyline points="4420,2950 4420,2004" fill="none" stroke="#52697A" stroke-width="5" stroke-linejoin="round" stroke-dasharray="18 14" marker-end="url(#dependencyArrow)"/>
+<polyline points="5100,2950 5260,2950 5260,1100 5100,1100 5100,924" fill="none" stroke="#52697A" stroke-width="5" stroke-linejoin="round" stroke-dasharray="18 14" marker-end="url(#dependencyArrow)"/>
+<g id="class-User">
+<rect x="180" y="300" width="1010" height="574" rx="2" fill="#FFFFFF" stroke="#263746" stroke-width="5"/>
+<line x1="180" y1="376" x2="1190" y2="376" stroke="#263746" stroke-width="4"/>
+<line x1="180" y1="700" x2="1190" y2="700" stroke="#263746" stroke-width="4"/>
+<text x="685" y="352" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="45" font-weight="700" fill="#263746">User</text>
+<text x="208" y="424" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">- id: Integer</text>
+<text x="208" y="474" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">- name: String</text>
+<text x="208" y="524" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">- email: String</text>
+<text x="208" y="574" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">- password: String</text>
+<text x="208" y="624" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">- role: String</text>
+<text x="208" y="674" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">- status: String</text>
+<text x="208" y="748" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">+ uploadDocument(file: File): Document</text>
+<text x="208" y="798" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">+ startConversation(title: String): Conversation</text>
+<text x="208" y="848" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">+ askQuestion(question: String): Message</text>
+</g>
+<g id="class-Conversation">
+<rect x="1370" y="300" width="1150" height="524" rx="2" fill="#FFFFFF" stroke="#263746" stroke-width="5"/>
+<line x1="1370" y1="376" x2="2520" y2="376" stroke="#263746" stroke-width="4"/>
+<line x1="1370" y1="650" x2="2520" y2="650" stroke="#263746" stroke-width="4"/>
+<text x="1945" y="352" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="45" font-weight="700" fill="#263746">Conversation</text>
+<text x="1398" y="424" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">- id: Integer</text>
+<text x="1398" y="474" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">- userId: Integer</text>
+<text x="1398" y="524" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">- title: String</text>
+<text x="1398" y="574" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">- createdAt: DateTime</text>
+<text x="1398" y="624" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">- updatedAt: DateTime</text>
+<text x="1398" y="698" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">+ addMessage(message: Message): void</text>
+<text x="1398" y="748" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">+ selectDocuments(documents: List&lt;Document&gt;): void</text>
+<text x="1398" y="798" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">+ loadHistory(): List&lt;Message&gt;</text>
+</g>
+<g id="class-ConversationDocument">
+<rect x="2710" y="300" width="1220" height="424" rx="2" fill="#FFFFFF" stroke="#263746" stroke-width="5"/>
+<line x1="2710" y1="376" x2="3930" y2="376" stroke="#263746" stroke-width="4"/>
+<line x1="2710" y1="600" x2="3930" y2="600" stroke="#263746" stroke-width="4"/>
+<text x="3320" y="352" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="45" font-weight="700" fill="#263746">ConversationDocument</text>
+<text x="2738" y="424" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">- id: Integer</text>
+<text x="2738" y="474" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">- conversationId: Integer</text>
+<text x="2738" y="524" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">- documentId: Integer</text>
+<text x="2738" y="574" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">- createdAt: DateTime</text>
+<text x="2738" y="648" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">+ attachDocument(documentId: Integer): void</text>
+<text x="2738" y="698" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">+ detachDocument(documentId: Integer): void</text>
+</g>
+<g id="class-Document">
+<rect x="4120" y="300" width="1100" height="624" rx="2" fill="#FFFFFF" stroke="#263746" stroke-width="5"/>
+<line x1="4120" y1="376" x2="5220" y2="376" stroke="#263746" stroke-width="4"/>
+<line x1="4120" y1="750" x2="5220" y2="750" stroke="#263746" stroke-width="4"/>
+<text x="4670" y="352" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="45" font-weight="700" fill="#263746">Document</text>
+<text x="4148" y="424" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">- id: Integer</text>
+<text x="4148" y="474" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">- userId: Integer</text>
+<text x="4148" y="524" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">- title: String</text>
+<text x="4148" y="574" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">- fileName: String</text>
+<text x="4148" y="624" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">- fileType: String</text>
+<text x="4148" y="674" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">- status: String</text>
+<text x="4148" y="724" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">- uploadedAt: DateTime</text>
+<text x="4148" y="798" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">+ updateStatus(status: String): void</text>
+<text x="4148" y="848" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">+ isReadyForChat(): Boolean</text>
+<text x="4148" y="898" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">+ deleteDocument(): void</text>
+</g>
+<g id="class-Message">
+<rect x="1370" y="1430" width="1150" height="474" rx="2" fill="#FFFFFF" stroke="#263746" stroke-width="5"/>
+<line x1="1370" y1="1506" x2="2520" y2="1506" stroke="#263746" stroke-width="4"/>
+<line x1="1370" y1="1780" x2="2520" y2="1780" stroke="#263746" stroke-width="4"/>
+<text x="1945" y="1482" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="45" font-weight="700" fill="#263746">Message</text>
+<text x="1398" y="1554" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">- id: Integer</text>
+<text x="1398" y="1604" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">- conversationId: Integer</text>
+<text x="1398" y="1654" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">- senderType: String</text>
+<text x="1398" y="1704" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">- content: Text</text>
+<text x="1398" y="1754" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">- createdAt: DateTime</text>
+<text x="1398" y="1828" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">+ storeQuestion(content: String): void</text>
+<text x="1398" y="1878" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">+ storeResponse(content: String): void</text>
+</g>
+<g id="class-BackgroundJob">
+<rect x="2710" y="1430" width="1050" height="474" rx="2" fill="#FFFFFF" stroke="#263746" stroke-width="5"/>
+<line x1="2710" y1="1506" x2="3760" y2="1506" stroke="#263746" stroke-width="4"/>
+<line x1="2710" y1="1730" x2="3760" y2="1730" stroke="#263746" stroke-width="4"/>
+<text x="3235" y="1482" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="45" font-weight="700" fill="#263746">BackgroundJob</text>
+<text x="2738" y="1554" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">- id: Integer</text>
+<text x="2738" y="1604" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">- documentId: Integer</text>
+<text x="2738" y="1654" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">- jobType: String</text>
+<text x="2738" y="1704" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">- status: String</text>
+<text x="2738" y="1778" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">+ dispatch(documentId: Integer): void</text>
+<text x="2738" y="1828" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">+ process(): void</text>
+<text x="2738" y="1878" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">+ markCompleted(): void</text>
+</g>
+<g id="class-DocumentChunk">
+<rect x="3930" y="1430" width="1290" height="574" rx="2" fill="#FFFFFF" stroke="#263746" stroke-width="5"/>
+<line x1="3930" y1="1506" x2="5220" y2="1506" stroke="#263746" stroke-width="4"/>
+<line x1="3930" y1="1880" x2="5220" y2="1880" stroke="#263746" stroke-width="4"/>
+<text x="4575" y="1482" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="45" font-weight="700" fill="#263746">DocumentChunk</text>
+<text x="3958" y="1554" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">- id: Integer</text>
+<text x="3958" y="1604" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">- documentId: Integer</text>
+<text x="3958" y="1654" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">- chunkText: Text</text>
+<text x="3958" y="1704" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">- tokenCount: Integer</text>
+<text x="3958" y="1754" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">- pageStart: Integer</text>
+<text x="3958" y="1804" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">- pageEnd: Integer</text>
+<text x="3958" y="1854" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">- embedding: Vector</text>
+<text x="3958" y="1928" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">+ storeEmbedding(embedding: Vector): void</text>
+<text x="3958" y="1978" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">+ getSimilarityScore(queryVector: Vector): Float</text>
+</g>
+<g id="class-AIChatService">
+<rect x="180" y="2950" width="1510" height="298" rx="2" fill="#F7FAFC" stroke="#263746" stroke-width="5"/>
+<line x1="180" y1="3026" x2="1690" y2="3026" stroke="#263746" stroke-width="4"/>
+<line x1="180" y1="3074" x2="1690" y2="3074" stroke="#263746" stroke-width="4"/>
+<text x="935" y="3002" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="45" font-weight="700" fill="#263746">AIChatService</text>
+<text x="208" y="3122" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">+ generateAnswer(question: String, context: String): String</text>
+<text x="208" y="3172" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">+ attachReferences(response: String, references: List&lt;DocumentChunk&gt;): String</text>
+<text x="208" y="3222" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">+ returnResponse(): String</text>
+</g>
+<g id="class-SemanticRetrievalService">
+<rect x="1880" y="2950" width="1530" height="298" rx="2" fill="#F7FAFC" stroke="#263746" stroke-width="5"/>
+<line x1="1880" y1="3026" x2="3410" y2="3026" stroke="#263746" stroke-width="4"/>
+<line x1="1880" y1="3074" x2="3410" y2="3074" stroke="#263746" stroke-width="4"/>
+<text x="2645" y="3002" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="45" font-weight="700" fill="#263746">SemanticRetrievalService</text>
+<text x="1908" y="3122" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">+ embedQuery(question: String): Vector</text>
+<text x="1908" y="3172" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">+ searchSimilarChunks(vector: Vector): List&lt;DocumentChunk&gt;</text>
+<text x="1908" y="3222" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">+ buildContext(chunks: List&lt;DocumentChunk&gt;): String</text>
+</g>
+<g id="class-DocumentProcessingService">
+<rect x="3600" y="2950" width="1620" height="398" rx="2" fill="#F7FAFC" stroke="#263746" stroke-width="5"/>
+<line x1="3600" y1="3026" x2="5220" y2="3026" stroke="#263746" stroke-width="4"/>
+<line x1="3600" y1="3074" x2="5220" y2="3074" stroke="#263746" stroke-width="4"/>
+<text x="4410" y="3002" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="45" font-weight="700" fill="#263746">DocumentProcessingService</text>
+<text x="3628" y="3122" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">+ extractText(document: Document): String</text>
+<text x="3628" y="3172" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">+ performOCR(document: Document): String</text>
+<text x="3628" y="3222" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">+ cleanText(text: String): String</text>
+<text x="3628" y="3272" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">+ createChunks(text: String): List&lt;DocumentChunk&gt;</text>
+<text x="3628" y="3322" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">+ generateEmbeddings(chunks: List&lt;DocumentChunk&gt;): void</text>
+</g>
+<text x="1218" y="590" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#263746">1</text>
+<text x="1342" y="590" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#263746">0..*</text>
+<text x="2548" y="600" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#263746">1</text>
+<text x="2682" y="600" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#263746">0..*</text>
+<text x="3958" y="630" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#263746">0..*</text>
+<text x="4092" y="630" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#263746">1</text>
+<text x="715" y="282" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#263746">1</text>
+<text x="4700" y="282" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#263746">0..*</text>
+<text x="1973" y="864" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#263746">1</text>
+<text x="1973" y="1412" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#263746">0..*</text>
+<text x="4698" y="964" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#263746">1</text>
+<text x="4603" y="1412" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#263746">0..*</text>
+<text x="4310" y="964" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#263746">1</text>
+<text x="3263" y="1412" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#263746">0..*</text>
+<rect x="1708" y="3124" width="155" height="48" fill="#FFFFFF"/><text x="1785" y="3158" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#263746" font-style="italic">«uses»</text>
+<rect x="1183" y="2436" width="205" height="48" fill="#FFFFFF"/><text x="1285" y="2470" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#263746" font-style="italic">«creates»</text>
+<rect x="3408" y="2606" width="155" height="48" fill="#FFFFFF"/><text x="3485" y="2640" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#263746" font-style="italic">«uses»</text>
+<rect x="3398" y="2536" width="215" height="48" fill="#FFFFFF"/><text x="3505" y="2570" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#263746" font-style="italic">«searches»</text>
+<rect x="4318" y="2476" width="205" height="48" fill="#FFFFFF"/><text x="4420" y="2510" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#263746" font-style="italic">«creates»</text>
+<rect x="5003" y="1046" width="245" height="48" fill="#FFFFFF"/><text x="5125" y="1080" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#263746" font-style="italic">«processes»</text>
+<text x="2700" y="3740" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#263746">UML Class Diagram of the AI-Powered Enterprise RAG System</text>
+</svg>
